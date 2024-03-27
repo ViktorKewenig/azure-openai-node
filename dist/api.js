@@ -127,7 +127,7 @@ exports.OpenAIApiAxiosParamCreator = function (configuration) {
             let localVarPath = `/chat/completions`;
             if (configuration.azure) {
                 let deploymentName = configuration.azure.deploymentName ? configuration.azure.deploymentName : createChatCompletionRequest.model;
-                localVarPath = `/openai/deployments/${deploymentName}/chat/completions?api-version=2023-03-15-preview`;
+                localVarPath = `/openai/deployments/${deploymentName}/chat/completions?api-version=2024-03-01-preview`;
             }
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, common_1.DUMMY_BASE_URL);
@@ -192,7 +192,7 @@ exports.OpenAIApiAxiosParamCreator = function (configuration) {
             let localVarPath = `/completions`;
             if (configuration.azure) {
                 let deploymentName = configuration.azure.deploymentName ? configuration.azure.deploymentName : createCompletionRequest.model;
-                localVarPath = `/openai/deployments/${deploymentName}/completions?api-version=2023-03-15-preview`;
+                localVarPath = `/openai/deployments/${deploymentName}/completions?api-version=2024-03-01-preview`;
             }
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, common_1.DUMMY_BASE_URL);
@@ -256,7 +256,7 @@ exports.OpenAIApiAxiosParamCreator = function (configuration) {
             let localVarPath = `/embeddings`;
             if (configuration.azure) {
                 let deploymentName = configuration.azure.deploymentName ? configuration.azure.deploymentName : createEmbeddingRequest.model;
-                localVarPath = `/openai/deployments/${deploymentName}/embeddings?api-version=2023-03-15-preview`;
+                localVarPath = `/openai/deployments/${deploymentName}/completions?api-version=2024-03-01-preview`;
             }
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, common_1.DUMMY_BASE_URL);
